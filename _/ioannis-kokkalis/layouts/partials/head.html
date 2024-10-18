@@ -1,0 +1,9 @@
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ if .Page.Title }} {{ .Page.Title }} - {{ end }} {{ .Site.Title }}</title>
+	
+	<link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
+	
+	<link rel="stylesheet" href="{{ ( resources.Get "styles/_.css" | resources.Minify ).Permalink }}">
+</head>

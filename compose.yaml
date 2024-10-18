@@ -1,0 +1,9 @@
+services:
+  hugo:
+    build:
+      dockerfile: dockerfile
+    ports:
+      - 1313:1313
+    volumes:
+      - ./_:/_
+    tty: true
